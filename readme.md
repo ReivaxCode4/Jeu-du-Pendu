@@ -3,4 +3,4 @@
 ### Auteur: Xavier Rémy
 ### Date de remise: 3 juin 2024
 
-#### Lien du jeu : 
+#### Lien du jeu : https://reivaxcode4.github.io/Jeu-du-Pendu/
