@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"/>
+
+    <!-- Ajustement de la taille du viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2W2-TP2 - Jeu du Pendu</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="all">
+
+    <!--Polices de caractères de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+    <!-- Intégration des styles -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Curseur personnalisé -->
+    <div class="curseur"></div>
+
+    <!-- Scène d'introduction -->
+    <main class="intro">
+        <div class="anim-titre-intro">Le Jeu du Pendu</div>
+        <div class="anim-sous-titre-intro">N'avez vous rien de mieux à faire?</div>
+
+        <!-- Éléments qui apparaitront après l'animation d'intro -->
+        <div class="apres-intro">
+            <!-- Bouton pour commencer une nouvelle partie -->
+            <div class="btn-nouvelle-partie">Nouvelle Partie</div>
+            <!-- Texte affichant le record -->
+            <div class="intro-record"></div>
+        </div>
+
+	</main>
+
+    <!-- Scène principal du jeu -->
+    <main class="jeu">
+
+        <h1>N'avez vous rien de mieux à faire?</h1>
+
+        <section class="interface-donnees">
+            <!-- Section pour l'image du "pendu" -->
+            <section class="interface-pendu">
+                <img id="img-pendu" src="images/erreur0.png" alt="image du pendu">
+            </section>
+
+            <!-- Interface pour le pointage -->
+            <section class="interface-pointage">
+                <div class="groupe-pointage">
+                    <div class="pointage-mot"></div>
+                    <div class="pointage-fluctuation">0</div>
+                </div>
+                <div class="groupe-pointage">
+                    <div class="pointage-total"></div>
+                    <div class="pointage-bilan">0</div>
+                </div>
+            </section>
+        </section>
+
+
+
+        <section class="interface-jeu"></section>
+            <!-- Section pour le mot et le clavier de jeu -->
+            <section class="section-mot">
+                <h2 class="indice"></h2>
+                <section class="lettres-du-mot"></section>
+                <section class="lettres-disponibles"></section>
+            </section>
+        </section>
+        
+
+    </main>
+
+    <main class="fin">
+
+        <div class="resultats">
+            <div class="message-record"></div>
+            <div class="nb-mots-devines"></div>
+            <div class="pointage-final"></div>
+        </div>
+
+        <!-- Tableau des parties précédentes: -->
+        <div class="conteneur-tableau">
+            <h3>Tableau de vos parties précédentes:</h3>
+            <div class="tableau-parties">
+                <div class="rangee-partie">
+                    <div>Partie:</div>
+                    <div>Pointage:</div>
+                </div>
+            </div>
+        </div>
+
+		<div class="btn-recommencer">Rejouer?</div>
+        
+	</main>
+
+    <!-- 
+        Fichiers JavaScript externes associés avec la page
+        (attention l'ordre d'inclusion des fichiers est important)
+    -->
+    <script src="js/banque-mots.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
